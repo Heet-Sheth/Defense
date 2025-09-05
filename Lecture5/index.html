@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senior Web Dev Application</title>
+</head>
+
+<body>
+    <h1>Senior Web Developer</h1>
+    <p>Thank you for your interest in this position, Please fill out this form.</p>
+    <hr>
+    <form>
+        <h2>Personal Details</h2>
+
+        <label for="uname">Full Name</label>
+        <br>
+        <input type="text" name="uname" id="uname" required>
+        <br><br>
+
+        <label for="email">Email</label>
+        <br>
+        <input type="email" name="email" id="email" required>
+        <br><br>
+
+        <label for="phone">Phone</label>
+        <br>
+        <input type="tel" name="phone" id="phone" required>
+        <br><br>
+
+        <label for="linkedin">Linkedin Profile</label>
+        <br>
+        <input type="url" name="linkedin" id="linkedin" placeholder="https://www.linkedin.com/in/heet-sheth-809492145/"
+            required>
+        <br><br>
+
+        <hr>
+
+        <h2>Professional Details</h2>
+        <br>
+
+        <label for="resume">Upload your Resume (PDF/DOCX)</label>
+        <br>
+        <input type="file" name="resume" id="resume" required>
+        <br><br>
+
+        <label for="cv">Cover letter</label>
+        <br>
+        <textarea name="cv" id="cv"
+            placeholder="Tell us more about yourself. eg, why you are fit for this job..."></textarea>
+        <br><br>
+
+        <label for="yoe">Years of Professional Experience</label>
+        <br>
+        <input type="number" name="yoe" id="yoe" required>
+        <br><br>
+
+        <label for="startDate">Earliest possible Start Date</label>
+        <br>
+        <input type="date" name="startDate" id="startDate" required>
+        <br><br>
+
+        <label for="workType">Preferred work type</label>
+        <br>
+        <select name="workType" id="workType">
+            <option value="Remote">Remote</option>
+            <option value="Hybrid">Hybrid</option>
+            <option value="onSite">On-Site</option>
+        </select>
+
+        <hr>
+
+        <h2>Skills and Availability</h2>
+
+        <p>Primary SkillSet</p>
+        <input type="radio" name="primarySkill" id="Frontend" value="Frontend Development">
+        <label for="Frontend">Frontend Developer</label>
+        <br>
+        <input type="radio" name="primarySkill" id="Backend" value="Backend Development">
+        <label for="Backend">Backend Developer</label>
+        <br>
+        <input type="radio" name="primarySkill" id="fullStack" value="Full-Stack Development">
+        <label for="fullStack">Full-Stack Developer</label>
+        <br>
+
+        <p>Additional Skills (Select all that applies.)</p>
+        <input type="checkbox" id="React" name="secondSkill" value="React">
+        <label for="React">React</label>
+        <br>
+
+        <input type="checkbox" id="Node" name="secondSkill" value="Node.js">
+        <label for="Node">Node.js</label>
+        <br>
+
+        <input type="checkbox" id="dbms" name="secondSkill" value="Database Management">
+        <label for="dbms">Database Management</label>
+        <br>
+
+        <input type="checkbox" id="Cloud" name="secondSkill" value="Cloud/DevOps">
+        <label for="Cloud">Cloud/DevOps</label>
+        <br><br>
+
+        <hr>
+
+        <h2>Final Confirmation</h2>
+
+        <input type="checkbox" name="legal" id="legal" required>
+        <label for="legal">I am legally authorized to work in this country.</label>
+        <br>
+        <br>
+
+        <label for="news">How did you hear about this position?</label>
+        <br>
+        <input type="text" id="news" name="news" placeholder="eg. linkedin" required>
+
+        <br><br>
+        <hr>
+
+        <input type="submit" value="Submit Application">
+        <input type="reset" value="Clear Application">
+    </form>
+</body>
+
+</html>
