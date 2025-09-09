@@ -1,0 +1,21 @@
+.wide{
+    width: 100%;
+}
+body{
+    background-color: black;
+    color: orange;
+}
+a{
+    color: yellow;
+}
+#Introduction{
+    background-color: rgb(237, 244, 32);
+    color: rgb(29, 11, 230);
+    font-size: 70px;
+    font-family: "UnifrakturMaguntia", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+#Intro{
+    font-size: 100px;
+}
