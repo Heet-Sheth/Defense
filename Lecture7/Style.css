@@ -1,0 +1,28 @@
+*{
+    color: white;
+}
+table{
+    width: 100%;
+    margin: 10px;
+    border: white;
+    text-align: center;
+}
+td,th{
+    padding: 5px;
+    border-radius: 40px;
+    margin: 5px;
+}
+th,.orange-color,i{
+    color: orange;
+}
+.border{
+    padding: 10px;
+    margin: 30px;
+    border: 4px solid rgb(255, 255, 255);
+    box-sizing: border-box;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 40px;
+}

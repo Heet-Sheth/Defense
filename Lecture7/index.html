@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display and Box</title>
+    <link rel="stylesheet" href="./Style.css">
+</head>
+
+<body style="background-color: black;">
+    <div class="border">
+        <h1>CSS</h1>
+    </div>
+    <div class="border">
+        <h2>Box-model</h2>
+        <ul>
+            <li>Every thing in the HTML/CSS follows box-modelling (including your root element, the canvas or webpage
+                area
+                of your browser).</li>
+            <li>The inner-most layer is of content.</li>
+            <li>Covered by padding (distance between border and content).</li>
+            <li>Followed by Border.</li>
+            <li>And lastly covered by margin (distance of current element from its neighbours).</li>
+        </ul>
+    </div>
+    <div class="border">
+        <h2>Difference between <span>content-box</span> and <span>border-box</span></h2>
+        <table border="5px">
+            <thead>
+                <tr>
+                    <th>Content-box <b class="orange-color">(default)</b></th>
+                    <th>Border-box</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Defines the height and width of the content only.</td>
+                    <td>Defines the combined height and width of content+padding+border.</td>
+                </tr>
+                <tr>
+                    <td>The padding and border takes addtional space beyond that of content.</td>
+                    <td>The padding and border makea the content adjust according to space required by them.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="border">
+        <h2>Block element vs Inline element</h2>
+        <table border="5px">
+            <thead>
+                <tr>
+                    <th>Block Elements</th>
+                    <th>Inline Elements</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Takes the full width available in its parent element.</td>
+                    <td>Takes only the space required by content inside it.</td>
+                </tr>
+                <tr>
+                    <td>Always start from a new line.</td>
+                    <td>Starts from the same line it space is available, and start from new one if current line is
+                        exhausted.</td>
+                </tr>
+                <tr>
+                    <td>Forces any element after it to start from another new line.</td>
+                    <td>Dosen't force it neighbours.</td>
+                </tr>
+                <tr>
+                    <td>Height/Width/Padding/Margin/etc... are applicable always.</td>
+                    <td>Height/Width have no effect and Padding/Margin only works on horizontal axis (left and right).
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">Both of them are convertible to each other via css property <b><i>(display:block or
+                                display:inline)</i></b></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="border">
+        <h2>My Advice</h2>
+        <p>Best of both (block and inline) is found when you use property like <b><i>(display:inline-block)</i></b></p>
+        <ul>
+            <li>Dosen't force any neighbours to start from new line.</li>
+            <li>Dosen't nessasarily start from new line.</li>
+            <li>Allows full fleged effect of height/width/padding/margin.</li>
+        </ul>
+    </div>
+</body>
+
+</html>
