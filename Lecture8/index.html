@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning and Priority</title>
+</head>
+
+<body>
+    <h1>CSS Magic</h1>
+    <hr>
+    <h2>Priorities</h2>
+    <p>Which css placement has the highest priorities?</p>
+    <ol>
+        <li>!important tag</li>
+        <li>Inline CSS</li>
+        <li>Id Selector (#)</li>
+        <li>Class Selector (.)</li>
+        <li>Tag Selector</li>
+    </ol>
+    <hr>
+    <h2>Positioning</h2>
+    <p>How do various positions behave</p>
+    <ol>
+        <li>Position <b>Relative</b>
+            <ul>
+                <li>Position of the element relative to its current position.</li>
+                <li>Even if the element is moved elsewhere, it still occupies its current position and no other element
+                    if allowed to enter its position automatically.</li>
+            </ul>
+        </li>
+        <li>Position <b>Absolute</b>
+            <ul>
+                <li>The position according to the nearest parent/ancestor with position set to relative.</li>
+                <li>Leaves its actual position empty for other elements.</li>
+            </ul>
+        </li>
+        <li>Position <b>Static <i>(Default)</i></b>
+            <ul>
+                <li>same as nothing changed, its the default one, so no need to apply.</li>
+            </ul>
+        </li>
+        <li>Position <b>Fixed</b>
+            <ul>
+                <li>It positions itself in accordance with the position of root element.</li>
+                <li>Sticks there even if the page scrolls in any direction.</li>
+                <li>Leaves its position empty for other elements.</li>
+            </ul>
+        </li>
+        <li>Position <b>Sticky</b>
+            <ul>
+                <li>Behaves like Absolute till a threshold(position) is reached.</li>
+                <li>After the threshold position, it sticks there like a fixed element.</li>
+            </ul>
+        </li>
+    </ol>
+</body>
+
+</html>
