@@ -1,0 +1,53 @@
+body{
+    background-color: black;
+    padding: 10px;
+}
+.container{
+    background-color: brown;
+    padding: 10px;
+    height: 40px;
+    position: relative;
+    border-radius: 20px;
+}
+.text{
+    color: white;
+    position: absolute;
+    font-size: 30px;
+    animation: textBanner 8s linear infinite alternate;
+}
+@keyframes textBanner {
+    from{
+        right: 30px;
+    }
+    to{
+        right: calc(100% - 291px);
+    }
+}
+.playfield{
+    margin-top: 40px;
+    width: 100%;
+    height: calc(100vh - 200px);
+    display: flex;
+    border-radius: 20px;
+    justify-content: center;
+    position: relative;
+    border: 3px solid red;
+}
+.ball{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    animation: ball-bounce 1s ease-in-out infinite alternate;
+}
+@keyframes ball-bounce {
+    from{
+        top:50px;
+        box-shadow: 200px 400px 10px -30px white;
+    }
+    to{
+        top:450px;
+        box-shadow: 30px 30px 10px -10px white;
+    }
+}
