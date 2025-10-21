@@ -1,6 +1,6 @@
 const changerButton = [...document.getElementsByClassName("button")];
 const picker = document.getElementById("color-picker");
-const body = [...document.getElementsByTagName("body")][0];
+const body = document.body;
 
 changerButton.forEach((button) =>
   button.addEventListener(
