@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Astrologer</title>
+</head>
+
+<body>
+    <div style="max-width: 400px; margin: 50px auto; padding: 20px; font-family: Arial, sans-serif;">
+        <h2 style="text-align: center; color: #333; margin-bottom: 30px;">Astrologer Chat</h2>
+
+        <form style="display: flex; flex-direction: column; gap: 15px;">
+            <div>
+                <label for="firstName" style="display: block; margin-bottom: 5px; font-weight: bold;">First
+                    Name:</label>
+                <input type="text" id="firstName" name="firstName" placeholder="Enter your first name"
+                    style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+            </div>
+
+            <div>
+                <label for="lastName" style="display: block; margin-bottom: 5px; font-weight: bold;">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Enter your last name"
+                    style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+            </div>
+
+            <div>
+                <label style="display: block; margin-bottom: 10px; font-weight: bold;">Gender:</label>
+                <div style="display: flex; gap: 15px;">
+                    <label style="font-weight: normal;">
+                        <input type="radio" id="male" name="gender" value="male" style="margin-right: 5px;">
+                        Male
+                    </label>
+                    <label style="font-weight: normal;">
+                        <input type="radio" id="female" name="gender" value="female" style="margin-right: 5px;">
+                        Female
+                    </label>
+                    <label style="font-weight: normal;">
+                        <input type="radio" id="other" name="gender" value="other" style="margin-right: 5px;">
+                        Other
+                    </label>
+                </div>
+            </div>
+
+            <div>
+                <label for="dob" style="display: block; margin-bottom: 5px; font-weight: bold;">Date of Birth:</label>
+                <input type="date" id="dob" name="dob"
+                    style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+            </div>
+
+            <button type="submit" style="background-color: #4CAF50; color: white; padding: 12px 20px; 
+                    border: none; border-radius: 4px; cursor: pointer; font-size: 16px; margin-top: 10px;">
+                Chat
+            </button>
+        </form>
+    </div>
+    <div id="chatResult"
+        style="max-width: 400px; margin: 20px auto; padding: 20px; font-family: Arial, sans-serif; display: none;">
+        <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
+                    border-radius: 20px; padding: 20px; color: white; 
+                    box-shadow: 0 8px 32px rgba(102, 126, 234, 0.3);
+                    position: relative;">
+            <div style="position: absolute; top: -10px; left: 30px; 
+                        width: 0; height: 0; 
+                        border-left: 15px solid transparent;
+                        border-right: 15px solid transparent;
+                        border-bottom: 15px solid #667eea;"></div>
+            <h3 style="margin: 0 0 15px 0; font-size: 18px;">Your Astrological Reading</h3>
+            <p id="chatMessage" style="margin: 0; line-height: 1.6; font-size: 14px;">
+                Welcome! Your personalized astrological insights will appear here after you submit your details.
+            </p>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
