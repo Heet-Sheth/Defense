@@ -1,0 +1,27 @@
+body {
+  background-color: black;
+  height: 100vh;
+}
+.bubble {
+  color: black;
+  border-radius: 50%;
+  position: absolute;
+  animation: zoom-in 4s linear 100ms normal forwards;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  height: 20px;
+  width: 20px;
+  padding: 5px;
+  align-items: center;
+}
+@keyframes zoom-in {
+  from {
+    opacity: 100%;
+    display: inline;
+  }
+  to {
+    transform: scale(4);
+    opacity: 0%;
+  }
+}
