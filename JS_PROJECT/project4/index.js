@@ -4,7 +4,7 @@ const tax = document.querySelector("p");
 
 const slabs = [
   { slab: 2400000, taxRate: 0.3 },
-  { slab: 200000, taxRate: 0.25 },
+  { slab: 2000000, taxRate: 0.25 },
   { slab: 1600000, taxRate: 0.2 },
   { slab: 1200000, taxRate: 0.15 },
 ];
