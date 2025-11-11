@@ -20,11 +20,17 @@ const users = [];
 const body = document.body;
 
 async function githubFetch() {
-  const response = await fetch("https://api.github.com/users");
-  const data = await response.json();
+  try {
+    const response = await fetch("https://api.github.com/users");
+    if (!response.ok) throw new Error("Response not available");
+    const data = await response.json();
 
-  for (let { avatar_url, login, html_url } of data)
-    body.appendChild(component(avatar_url, login, html_url));
+    for (let { avatar_url, login, html_url } of data)
+      body.appendChild(component(avatar_url, login, html_url));
+  } catch (error) {
+    console.log("Error retrieving data:", error);
+    body.textContent = "Error retrievig data!!!";
+  }
 }
 
 githubFetch();
