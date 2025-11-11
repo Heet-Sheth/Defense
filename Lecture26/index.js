@@ -23,8 +23,8 @@ async function githubFetch() {
   const response = await fetch("https://api.github.com/users");
   const data = await response.json();
 
-  for (let { avatar_url, login, url } of data)
-    body.appendChild(component(avatar_url, login, url));
+  for (let { avatar_url, login, html_url } of data)
+    body.appendChild(component(avatar_url, login, html_url));
 }
 
 githubFetch();
